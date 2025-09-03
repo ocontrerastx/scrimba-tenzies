@@ -12,4 +12,30 @@ main {
   max-width: 400px;
   padding: 34px;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-instructions {
+  text-align: center;
+}
+
+.grid-container {
+  margin-top: 20px;
+  display: grid;
+  grid-template: auto auto / repeat(5, 1fr);
+  gap: 20px;
+}
+
+.roll-button {
+  margin-top: 26px;
+  border: none;
+  color: #ffffff;
+  background: #5035ff;
+  font-weight: bold;
+  width: 92px;
+  height: 36px;
+  border-radius: 4px;
 }
