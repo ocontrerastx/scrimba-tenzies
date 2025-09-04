@@ -1,7 +1,18 @@
 import "./Die.css";
 
 function Die(props) {
-  return <button className="die">{props.value}</button>;
+  function handleClick() {
+    props.setHold(props.id);
+  }
+
+  return (
+    <button
+      onClick={handleClick}
+      className={`die ${props.isHeld ? "is-held" : ""}`}
+    >
+      {props.value}
+    </button>
+  );
 }
 
 export default Die;
